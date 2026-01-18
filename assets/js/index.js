@@ -162,4 +162,5 @@ console.log(books.filter((b) => b.pages >= 200 && b.pages <= 400).length);
 
 // Завдання 8
 
-console.log(books.sort((b1, b2) => (b1.pages > b2.pages ? 1 : -1))[0]);
+// Сортування без мутації масиву (spread-оператор ...)
+console.log([...books].sort((b1, b2) => (b1.pages > b2.pages ? 1 : -1))[0]);
